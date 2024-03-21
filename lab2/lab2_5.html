@@ -8,40 +8,34 @@
 <body>
     <h1>Форма регистрации пользователя</h1>
     <form action="#">
-        <div>
-            <label>
+
+            <label for="mail"></label>
                 Email
-                <input placeholder="Введите e-mail">
-            </label>
-        </div>
-        <div>
-            <label>
+                <input placeholder="Введите e-mail" id="mail">
+            
+        <br />
+      
+            <label for="password"></label>
                 Пароль
-                <input placeholder="Введите пароль">
-            </label>
-        </div>
-        <div>
-        <label>
-            Пол
-            <div>
-                <label>
-                    Мужчина
-                    <input type="radio" name="sex">
-                </label>
-            </div>
-            <div>
-                <label>
-                    Женщина
-                    <input type="radio" name="sex">
-                </label>
-            </div>
-          
-        </label>
-        </div>
-        <div>
-            <label>
+                <input placeholder="Введите пароль" id="password">
+            
+        <br />
+        <label for="sex">Пол</label>
+		<br />
+                <label id="sex" for="cm">Мужчина</label>
+                    
+                    <input type="radio" name="sex" id="cm">
+		<br />
+                
+                <label id="sex" for="cw">Женщина</label>
+                    
+                    <input type="radio" name="sex" id="cw">
+
+        <br />
+            <label for="sel">
+		<br />
                 Год рождения 
-                <select>
+                <select id="sel">
                     <option value="1971">1971</option>
                     <option value="1981">1981</option>
                     <option value="1991">1991</option>
@@ -50,55 +44,46 @@
                     <option value="2021">2021</option>
                 </select>
                 -й
-            </label>
-        </div>
-        <div>
-            <label>
-                Я знаю
-                <div>
-                    <label>
-                        <input type="checkbox">
+
+        <br />
+
+            <label for="lang">Я знаю</label>
+                    <br />
+                    <label id="lang"></label>
+                        <input type="checkbox" checked>
                         Русский
-                    </label>
-                </div>
-                <div>
-                    <label>
+                    <br />
+                    <label id="lang">
                         <input type="checkbox">
                         Английский
                     </label>
-                </div>
-                <div>
-                    <label>
+		    <br />
+                    <label id="lang">
                         <input type="checkbox">
                         Немецкий
                     </label>
-                </div>
-                <div>
-                    <label>
+		    <br />
+                    <label id="lang">
                         <input type="checkbox">
                         Испанский
                     </label>
-                </div>
-                <div>
-                    <label>
+		    <br />
+                    <label id="lang">
                         <input type="checkbox">
                         Китайский
                     </label>
-                </div>
-                    </label>
-                </div>
-            </label>
-        </div>
-        <div>
-            <label>
-                Обо мне
+
+        <br />
+            <label for="aboutself">Обо мне</label>
+		<br />
                 <textarea rows="5" cols="33" placeholder="Напишите коротко о себе"></textarea>
-            </label>
-        </div>
-        <div>
-            <button name="ready">Готово</button>
-            <button name="clean">Очистить</button>
-        </div>  
+            
+        <br />
+        
+            <button name="ready" type="submit">Готово</button>
+            <button name="clean" type="reset">Очистить</button> 
     </form>
+	<form>
+
 </body>
 </html>
