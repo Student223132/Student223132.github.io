@@ -1,3 +1,3 @@
-document.querySelector("html").onclick = function () {
-    alert("Ouch! Stop poking me!");
-  };
+var botton = document.body.children[0]
+
+let age = document.querySelector('input');
