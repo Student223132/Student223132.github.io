@@ -7,7 +7,7 @@ function rpressed(){
 	f = true
 	let fnumber = + enumber.value;
 	while (i <= fnumber) {
-		for (let j = 0;j < 7; j++){
+		for (let j = 0;j < 6; j++){
 			if(dogs>0){
 				list.push('dog');
 				dogs--;
@@ -18,8 +18,9 @@ function rpressed(){
 					cats--;
 				}
 				else{
-					dogs = 3;
+					dogs = 2;
 					cats = 2;
+					list.push('dog');
 				}
 			}
 
