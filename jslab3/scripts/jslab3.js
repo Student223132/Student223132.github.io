@@ -31,3 +31,9 @@ export function checkSpam(fstr){
     return isspam;
         
 }
+export function truncate(fstr, fnum){
+    if (fstr.length > fnum){
+        fstr = fstr.slice(0, fnum) + '...'; 
+    }
+    return fstr;
+}
