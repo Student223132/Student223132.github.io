@@ -65,3 +65,10 @@ export function fibs(n){
     }
     return arr;
 }
+
+export function arrReverseSorted(arr){
+    let arr1 = arr.toReversed();
+
+    return arr1;
+}
+
