@@ -6,7 +6,7 @@ export function getDecimal(n){
 export function normalizeUrl(fstr){
     if (fstr.slice(0, 8) != 'https://'){
         if(fstr.slice(0, 7) == 'http://'){
-            fstr.replace('http://', 'https://');
+            fstr = fstr.slice(-(fstr.length-7));
         }
        fstr = 'https://' + fstr;
     }
