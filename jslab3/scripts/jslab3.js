@@ -72,3 +72,8 @@ export function arrReverseSorted(arr){
     return arr1;
 }
 
+export function unique(arr){
+    let set1 = new Set(arr);
+    let arr1 = Array.from(set1);
+    return arr1;
+}
