@@ -37,3 +37,21 @@ export function truncate(fstr, fnum){
     }
     return fstr;
 }
+
+export function camelize(fstr){
+    let char = ' ';
+    let spart1 = ' ';
+    let spart2 = ' ';
+
+        for(let i = 0; i < fstr.length; i++){
+        if(fstr[i] === '-'){
+            char = fstr[i+1];
+            spart1 = fstr.slice(0, i);
+            spart2 = fstr.slice(-(fstr.length - i - 1));
+            char = char.toUpperCase();
+            fstr = spart1 + char + spart2;
+
+        }
+    }
+    return fstr;
+}
