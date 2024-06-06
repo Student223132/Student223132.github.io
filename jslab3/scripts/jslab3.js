@@ -1,3 +1,4 @@
+import { fib } from "./lab2.js";
 
 export function getDecimal(n){
     return Math.round((n % 1)*10000000)/10000000;
@@ -31,6 +32,7 @@ export function checkSpam(fstr){
     return isspam;
         
 }
+
 export function truncate(fstr, fnum){
     if (fstr.length > fnum){
         fstr = fstr.slice(0, fnum) + '...'; 
@@ -54,4 +56,12 @@ export function camelize(fstr){
         }
     }
     return fstr;
+}
+
+export function fibs(n){
+    let arr = [];
+    for(let i = 0; i < n; i++){
+        arr.push(fib(i));
+    }
+    return arr;
 }
