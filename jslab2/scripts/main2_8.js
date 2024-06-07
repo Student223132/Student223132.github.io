@@ -1,11 +1,19 @@
-function rpressed(){
-    let stext1 = String(text2.value);
-	alert(addBlackSpot(stext1));
+
+/**
+* Добавляет свойство "blackSpot" к объекту, используя уникальный символ
+* @param {object} obj объект, к которому нужно добавить свойство
+* @return Исходный объект с добавленным свойством "blackSpot"
+*/
+function addBlackSpot(obj) {
+    if (typeof obj !== 'object' || obj === null) {
+        throw new Error('obj должен быть объектом');
+    }
+
+    if (!obj.hasOwnProperty(Symbol.for('blackSpot'))) {
+        obj[Symbol.for('blackSpot')] = true;
+    }
+
+    return obj;
 }
 
 
-function addBlackSpot(s){
-    s[Symbol.for("blackSpot")] = true
-    alert(s[Symbol.for("blackSpot")])
-    return s;
-}
