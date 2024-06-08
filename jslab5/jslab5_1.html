@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма</title>
+</head>
+<body>
+    <form action="#">
+        <label for="age1">Введите свой возраст</label>
+            <input type="number" placeholder="Введите число" id="age1">
+        <br />
+            <label for="sex">Пол</label>
+		<br />
+                <label id="sex" for="cm">Мужчина</label>
+                    
+                    <input type="radio" name="sex" id="cm">
+		<br />
+                
+                <label id="sex" for="cf">Женщина</label>
+                    
+                    <input type="radio" name="sex" id="cf">
+
+        
+        <br />
+        
+            <button name="calculate" type="submit" id = 'calculateb'>Рассчитать</button>
+            <button name="clean" type="reset" id = 'cleanb'>Очистить</button> 
+            
+    </form>
+
+        <p name = "result" id = "result1">Результат:</p>
+
+        <script type="module" src = 'scripts/main5_1.js'></script>
+</body>
+</html>
