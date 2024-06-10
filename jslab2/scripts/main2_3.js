@@ -10,10 +10,10 @@ function isleap(n){
         leap  = true;
     }
     if (leap){
-        return 'високосный';
+        return true;
     }  
     else{
-        return 'не високосный';
+        return false;
     }
 }
 

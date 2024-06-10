@@ -1,25 +1,21 @@
 function rpressed(){
 	
 	let fnumber1 = + number1.value;
-	compare(fnumber1)
+    let fnumber2 = + number2.value;
+	alert(compare(fnumber1)(fnumber2));
 }
 
 function compare(n){
-    anon(n)
-}
-
-function anon(x){
-    let y = prompt("Введите второе число для сравнения")
-    if (y > x){
-        alert(true)
+    const anon = (y) =>     {if (y > n){
+        return true;
     }
     else{
-        if (y < x){
-            alert(false)
+        if (y < n){
+            return false;
         }
         else{
-            alert(null)
+            return null;
         }
-    }
-    
+    }};
+    return anon;
 }

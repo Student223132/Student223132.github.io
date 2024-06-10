@@ -6,14 +6,14 @@ function rpressed(){
 
 function fibonacci(n){
     let result = BigInt(0)
-    let prev1 = 1;
-    let prev2 = 0;
+    let prev1 = BigInt(1);
+    let prev2 = BigInt(0);
     if (n === 0){
-        result = 0;
+        result = BigInt(0);
     }
     else{
         if (n === 1){
-            result = 1;
+            result = BigInt(1);
         }
         else{
             for (let i = 2; i<=n;i++){
@@ -23,5 +23,6 @@ function fibonacci(n){
             }
         }
     }
+    alert(typeof(result));
     return result;
 }
